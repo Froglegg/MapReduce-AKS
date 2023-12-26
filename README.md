@@ -1,6 +1,7 @@
 # Kubernetes Master/Worker
 > [!NOTE]
-> I am not at liberty to publicly share the source code of this repository, however please reach out to me directly if you would like to discuss this implemnetation
+> I am not at liberty to publicly share the source code of this repository, however please reach out to me directly if you would like to discuss this project
+
 This is a Kubernetes gRPC framework implementing a fault tolerant master / worker pattern for parallel processing at a giant scale. The Kubernetes deployment YAML files and container build scripts are configured for both local development and production deployment on cloud services such as Azure Kubernetes Service or Elastic Kubernetes Service.
 
 This framework utilizes Etcd for distributed state management and a heartbeat mechanism for detecting slow / dead workers. In addition, Kubernetes liveness and readiness probes are used for fault tolerant, smart load balancing.
