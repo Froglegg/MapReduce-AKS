@@ -2,7 +2,7 @@
 > [!NOTE]
 > I am not at liberty to publicly share the source code of this repository, however please reach out to me directly if you would like to discuss this project and I can provide a share link.
 
-This is a Kubernetes gRPC MapReduce framework written in Go, and which implements a fault-tolerant master / worker pattern for parallel processing at a giant scale. The Kubernetes deployment YAML files and container build scripts are configured for both local development and production deployment using Azure Kubernetes Service (AKS).
+This is a Kubernetes gRPC MapReduce framework written in GoLang, and which implements a fault-tolerant master / worker pattern for parallel processing at a giant scale. The Kubernetes deployment YAML files and container build scripts are configured for both local development and production deployment using Azure Kubernetes Service (AKS).
 
 This framework utilizes Etcd for distributed state management and a heartbeat mechanism for detecting slow / dead workers. In addition, Kubernetes liveness and readiness probes are used for fault tolerant, smart load balancing. This framework also makes use of Azure Blob Storage for reading and writing intermediate files.
 
